@@ -255,13 +255,13 @@
                       new ApexCharts(document.querySelector("#reportsChart"), {
                         series: [{
                           name: 'Sales',
-                          data: [31, 40, 28, 51, 42, 82, 56, 56, 56, 56],
+                          data: [31, 40, 28, 51, 42, 82, 56, 78, 53, 43,55],
                         }, {
                           name: 'Revenue',
-                          data: [11, 32, 45, 32, 34, 52, 41, 56, 56, 56]
+                          data: [11, 32, 45, 32, 34, 52, 41, 38, 76, 61, 67]
                         }, {
                           name: 'Customers',
-                          data: [15, 11, 32, 18, 9, 24, 11, 56, 56, 56]
+                          data: [15, 11, 32, 18, 9, 24, 11, 58, 38, 78, 40]
                         }],
                         chart: {
                           height: 350,
@@ -291,13 +291,7 @@
                           width: 2
                         },
                         xaxis: {
-                          type: 'datetime',
-                          categories: ["2018-09-19T00:00:00.000Z", "2018-09-19T01:30:00.000Z", "2018-09-19T02:30:00.000Z", "2018-09-19T03:30:00.000Z", "2018-09-19T04:30:00.000Z", "2018-09-19T05:30:00.000Z", "2018-09-19T06:30:00.000Z"]
-                        },
-                        tooltip: {
-                          x: {
-                            format: 'dd/MM/yy HH:mm'
-                          },
+                          categories: ["Janvier", "Fevrier", "Mars", "Avril", "Mai", "Juin", "Aout", "Septembre", "Octobre", "Novembre", "Decembre"]
                         }
                       }).render();
                     });
