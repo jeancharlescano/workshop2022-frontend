@@ -264,6 +264,7 @@
                   </div>
                 </div>
               </div>
+<<<<<<< Updated upstream
               <!-- End Customers Card -->
 
               <!-- Reports -->
@@ -342,6 +343,54 @@
                                 "Decembre",
                               ],
                             },
+=======
+
+            </div><!-- End Customers Card -->
+
+            <!-- Reports -->
+            <div class="col-12">
+              <div class="card">
+
+
+
+                <div class="card-body">
+                  <h5 class="card-title">Reports <span>/Today</span></h5>
+
+                  <!-- Line Chart -->
+                  <div id="reportsChart"></div>
+
+                  <script>
+                    document.addEventListener("DOMContentLoaded", () => {
+                      new ApexCharts(document.querySelector("#reportsChart"), {
+                        series: [{
+                          name: 'Sales',
+                          data: [1100, 40, 28, 51, 42, 82, 56, 78, 53, 43,55],
+                        }, {
+                          name: 'Revenue',
+                          data: [11, 32, 45, 32, 34, 52, 41, 38, 76, 61, 67]
+                        }, {
+                          name: 'Customers',
+                          data: [15, 11, 32, 18, 9, 24, 11, 58, 38, 78, 40]
+                        }],
+                        chart: {
+                          height: 350,
+                          type: 'area',
+                          toolbar: {
+                            show: false
+                          },
+                        },
+                        markers: {
+                          size: 4
+                        },
+                        colors: ['#4154f1', '#2eca6a', '#ff771d'],
+                        fill: {
+                          type: "gradient",
+                          gradient: {
+                            shadeIntensity: 1,
+                            opacityFrom: 0.3,
+                            opacityTo: 0.4,
+                            stops: [0, 90, 100]
+>>>>>>> Stashed changes
                           }
                         ).render();
                       });
@@ -405,6 +454,40 @@
                 </div>
                 <!-- End Reports -->
               </div>
+<<<<<<< Updated upstream
+=======
+			  <div class="card">
+			  <div class="card-body">
+              <h5 class="card-title">prediction 2023</h5>
+
+              <!-- Line Chart -->
+              <canvas id="lineChart" style="max-height: 400px; display: block; box-sizing: border-box; height: 262.4px; width: 527.2px;" width="659" height="328"></canvas>
+              <script>
+                document.addEventListener("DOMContentLoaded", () => {
+                  new Chart(document.querySelector('#lineChart'), {
+                    type: 'line',
+                    data: {
+                      labels: ["Janvier", "Fevrier", "Mars", "Avril", "Mai", "Juin", "Aout", "Septembre", "Octobre", "Novembre", "Decembre"],
+                      datasets: [{
+                        label: 'Line Chart',
+                        data: [65, 59, 80, 81, 56, 55, 40, 40, 40, 40, 40],
+                        fill: false,
+                        borderColor: 'rgb(75, 192, 192)',
+                        tension: 0.1
+                      }]
+                    },
+                    options: {
+                      scales: {
+                        y: {
+                          beginAtZero: true
+                        }
+                      }
+                    }
+                  });
+                });
+              </script>
+              <!-- End Line CHart -->
+>>>>>>> Stashed changes
 
               <!-- Recent Sales -->
             </div>
