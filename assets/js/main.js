@@ -432,3 +432,16 @@ const createAccount = () => {
     body: JSON.stringify(data),
   }).then((res) => console.log(res));
 };
+
+const getTotalConso = () => {
+  fetch(`${urlApi}/data`)
+    .then((res) => res.json())
+    .then((data) => {
+      let total = 0;
+      for (const e of data) {
+        total += Number(e.nb_watt);
+        console.log("🚀 ~ file: main.js ~ line 443 ~ .then ~ total", total);
+      }
+      document.getElementById("totalConso").innerHTML = `${total} W`;
+    });
+};
